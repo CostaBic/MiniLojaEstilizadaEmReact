@@ -1,26 +1,26 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,jsx}"],
-  darkMode: 'class', // controlado via class 'dark' em <html>
+  darkMode: "class", // <<< habilita suporte a temas alternando a classe "dark" no <html>
+  content: [
+    "./index.html",
+    "./src/**/*.{js,jsx,ts,tsx}", // pega todos os componentes e páginas
+  ],
   theme: {
     extend: {
-      colors: {
-        primary: '#0B72FF',
-        accent: '#06D6A0',
-        tagNew: '#06D6A0',
-        tagPromo: '#FF6B6B'
+      keyframes: {
+        shimmer: {
+          "0%": { backgroundPosition: "200% 0" },
+          "100%": { backgroundPosition: "-200% 0" },
+        },
       },
-      borderRadius: {
-        md: '12px'
+      animation: {
+        shimmer: "shimmer 1.2s linear infinite",
       },
-      boxShadow: {
-        '1': '0 1px 2px rgba(2,6,23,0.06)',
-        '2': '0 6px 18px rgba(2,6,23,0.12)'
+      backgroundImage: {
+        "skeleton-gradient":
+          "linear-gradient(90deg, rgba(0,0,0,0.06) 8%, rgba(0,0,0,0.02) 18%, rgba(0,0,0,0.06) 33%)",
       },
-      transitionDuration: {
-        DEFAULT: '180'
-      }
-    }
+    },
   },
   plugins: [],
-}
+};

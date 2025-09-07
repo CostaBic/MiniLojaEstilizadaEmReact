@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* variáveis de tema */
+.light {
+  --bg: #ffffff;
+  --bg-color: #ffffff;
+  --text: #0b1a2b;
+  --text-color: #0b1a2b;
+  --surface: #f7f7f9;
+  --card-bg: #f9f9f9;
+  --card-border: #ddd;
+  --primary: #5a74e6;
+  --button-bg: #007bff;
+  --button-text: #ffffff;
+  --muted: #6b7785;
+  --shadow-1: 0 1px 2px rgba(2,6,23,0.06);
+  --shadow-2: 0 6px 18px rgba(2,6,23,0.12);
+  --radius-md: 12px;
+  --t: 180ms;
+  --focus: #7a93ff;
+  --nav-bg-top: rgba(255,255,255,0.85);
+  --nav-bg-bottom: rgba(255,255,255,0.7);
+}
+
+.dark {
+  --bg: #0b0b0f;
+  --bg-color: #0b0b0f;
+  --text: #E6EEF8;
+  --text-color: #E6EEF8;
+  --surface: #131316;
+  --card-bg: #131316;
+  --card-border: #333;
+  --primary: #3DA1FF;
+  --button-bg: #2F8CFF;
+  --button-text: #ffffff;
+  --muted: #9aa9c7;
+  --shadow-1: 0 1px 2px rgba(0,0,0,0.5);
+  --shadow-2: 0 10px 30px rgba(0,0,0,0.6);
+  --radius-md: 12px;
+  --t: 180ms;
+  --focus: #FFB703;
+  --nav-bg-top: rgba(16,16,18,0.6);
+  --nav-bg-bottom: rgba(16,16,18,0.5);
+}

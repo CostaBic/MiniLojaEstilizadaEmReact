@@ -1,0 +1,40 @@
+/* src/styles/App.module.css */
+
+.wrapper {
+  min-height: 100vh;
+  background: var(--bg);       
+  color: var(--text);
+  transition: background var(--t), color var(--t);
+}
+
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-4, 16px); /* se não houver --space-4, usa 16px */
+   padding-top: 80px;
+}
+
+/* Heading */
+.heading {
+  font-size: 28px;
+  margin: 8px 0 18px;
+  color: var(--text);
+}
+
+/* Grid - breakpoints exatos */
+.productsGrid {
+  display: grid;
+  gap: var(--space-4, 16px);
+  grid-template-columns: 1fr; 
+}
+
+@media (min-width: 481px) {
+  .productsGrid { grid-template-columns: repeat(2,1fr); }
+}
+@media (min-width: 769px) {
+  .productsGrid { grid-template-columns: repeat(3,1fr); }
+}
+@media (min-width: 1025px) {
+  .productsGrid { grid-template-columns: repeat(4,1fr); }
+}

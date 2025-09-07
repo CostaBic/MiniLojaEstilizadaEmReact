@@ -1,0 +1,50 @@
+.btn{
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight:600;
+  cursor:pointer;
+  border: none;
+  transition: transform var(--t), box-shadow var(--t), opacity var(--t);
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font:inherit; /* Garante que o botão herde a fonte do corpo */
+}
+
+/* Variação sólida */
+.btn--solid {
+  background: var(--primary);
+  color: white;
+  box-shadow: var(--shadow-1);
+}
+
+.btn--solid:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-2);
+}
+
+/* Variação com contorno (outline) */
+.btn--outline {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid rgba(11,26,43,0.08);
+}
+
+/* Cor do contorno no modo escuro */
+.dark .btn--outline {
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+/* Variação "fantasma" (ghost) */
+.btn--ghost {
+  background: transparent;
+  color: var(--primary);
+}
+
+/* Botão desabilitado */
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}

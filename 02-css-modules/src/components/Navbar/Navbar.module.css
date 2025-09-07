@@ -1,0 +1,50 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--space-4);
+  background: linear-gradient(180deg, var(--nav-bg-top), var(--nav-bg-bottom));
+  backdrop-filter: blur(6px);
+  box-shadow: var(--shadow-1);
+  z-index: 50;
+}
+
+.navbarInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1650px;
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text); /* usa cor do tema */
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.themeButton {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: var(--button-bg);
+  color: var(--button-text);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.cart {
+  position: relative;
+  color: var(--text);
+}

@@ -1,9 +1,9 @@
 // src/App.jsx
 import { useState } from "react";
 import useTheme from "./hooks/useTheme";
-import Navbar from "./components/Navbar/Navbar";
-import ProductCard from "./components/ProductCard/ProductCard";
-import products from "./data/products";
+import Navbar from "./components/Navbar";
+import ProductCard from "./components/ProductCard";
+import products from "./lib/products";
 
 export default function App() {
   const { toggleTheme } = useTheme("light");

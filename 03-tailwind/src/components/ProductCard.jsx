@@ -1,4 +1,4 @@
-import Button from "../Button/Button.jsx";
+import Button from "./Button.jsx";
 
 export default function ProductCard({ product, onAddToCart }) {
   const { title, price, image, tag, rating } = product;

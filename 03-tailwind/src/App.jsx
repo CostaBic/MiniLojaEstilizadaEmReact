@@ -18,10 +18,12 @@ export default function App() {
       <Navbar toggleTheme={toggleTheme} cartCount={cartCount} />
       <main className="max-w-[1200px] mx-auto p-4 pt-20">
         <h1 className="text-[28px] my-2 mb-[18px] font-bold text-[var(--text)]">
+          <br />
+          <br /><br />
           Produtos
         </h1>
         <section
-          className="grid gap-4 grid-cols-1 
+          className="grid gap-6 grid-cols-1 
                      min-[481px]:grid-cols-2 
                      min-[769px]:grid-cols-3 
                      min-[1025px]:grid-cols-4"

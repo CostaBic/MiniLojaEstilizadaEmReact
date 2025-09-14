@@ -11,7 +11,10 @@ export const light = {
   radius: "12px",
   shadow1: "0 1px 2px rgba(2,6,23,0.06)",
   shadow2: "0 6px 18px rgba(2,6,23,0.12)",
-  t: "180ms"
+  t: "180ms",
+
+
+  buttonTextOnPrimary: "#0B1A2B", // texto escuro para ter contraste no azul
 };
 
 export const dark = {
@@ -27,5 +30,8 @@ export const dark = {
   radius: "12px",
   shadow1: "0 1px 2px rgba(0,0,0,0.5)",
   shadow2: "0 10px 30px rgba(0,0,0,0.6)",
-  t: "180ms"
+  t: "180ms",
+
+
+  buttonTextOnPrimary: "#FFFFFF", // texto claro no azul escuro
 };

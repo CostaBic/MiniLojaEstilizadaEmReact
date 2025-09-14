@@ -10,12 +10,13 @@ export default function ProductCard({ product, onAddToCart }) {
 
   return (
     <div
-      className="
-        bg-[var(--card-bg)] border border-[var(--card-border)]
-        rounded-[10px] p-4
-        transition-transform duration-200 ease-out hover:-translate-y-1
-      "
-    >
+  className="
+    bg-[var(--card-bg)] border border-[var(--card-border)]
+    rounded-[10px] p-6 md:p-8
+    transition-transform duration-200 ease-out hover:-translate-y-1
+  "
+>
+
       {/* Imagem */}
       <div className="text-center mb-4">
         <img
